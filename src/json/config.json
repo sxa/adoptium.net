@@ -17,7 +17,13 @@
       "searchableName": "openjdk16",
       "jvm": ["HotSpot"],
       "label": "OpenJDK 16",
-      "lts": "latest"
+      "lts": false
+    },
+    {
+      "searchableName": "openjdk17",
+      "jvm": ["HotSpot"],
+      "label": "OpenJDK 17",
+      "lts": true
     }
   ],
   "installCommands": [
@@ -113,6 +119,16 @@
       },
       "osDetectionString": "Mac OS X OSX macOS Macintosh",
       "supported_version": "10.10 or later"
+    },
+    {
+      "officialName": "macOS aarch64",
+      "searchableName": "AARCH64_MAC",
+      "attributes": {
+        "os": "mac",
+        "architecture": "aarch64"
+      },
+      "osDetectionString": "not-to-be-detected",
+      "supported_version": "11 or later"
     },
     {
       "officialName": "Linux s390x",
